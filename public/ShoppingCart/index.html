@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/3ecaa7a2c4.js" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
     <link href="../styles.css" rel="stylesheet">
 </head>
 
@@ -104,52 +105,42 @@
                                     Dropdown list <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#" id="btn1">Product (Unit Price)</a>
-                                    <a class="dropdown-item" href="#" id="btn1">Product2 (Unit Price)</a>
-                                    <a class="dropdown-item" href="#" id="btn1">Product3 (Unit Price)</a>
+                                    <button type="button" class="dropdown-item" href="#" id="btn2" price="99">Product2
+                                        ($99)</button>
+                                    <button type="button" class="dropdown-item" href="#" id="btn3" price="99">Product3
+                                        ($99)</button>
+                                    <button type="button" class="dropdown-item" href="#" id="btn1" price="99">Product1
+                                        ($99)</button>
                                 </ul>
                             </div>
                             <hr class="mb-4">
                             <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-name">Units</label>
-                                    <input type="text" class="form-control form-control-sm" id="cc-name" placeholder=""
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Invalid Number.
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-number">Unit Price</label>
-                                    <input type="text" class="form-control form-control-sm" id="unit-price"
-                                        placeholder="" required>
-                                </div>
+                                <hr class="mb-4">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Add to Cart</button>
+                                </form>
                             </div>
-                            <hr class="mb-4">
-                            <button class="btn btn-primary btn-lg btn-block" type="submit">Add to Cart</button>
-                            </form>
                         </div>
                     </div>
-                </div>
-                <!-- Footer -->
-                <footer class="footer">
-                    <div class="container">
-                        <span class="text-muted"><span class="text-muted"><i class="fas fa-shipping-fast"></i> Shop n
-                                Go!</span></span>
-                    </div>
-                </footer>
+                    <!-- Footer -->
+                    <footer class="footer">
+                        <div class="container">
+                            <span class="text-muted"><span class="text-muted"><i class="fas fa-shipping-fast"></i> Shop
+                                    n
+                                    Go!</span></span>
+                        </div>
+                    </footer>
 
-                <!-- Scripts -->
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-                    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                    crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-                    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-                    crossorigin="anonymous"></script>
+                    <!-- Scripts -->
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                        crossorigin="anonymous"></script>
 </body>
 
 </html>
