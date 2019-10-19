@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/3ecaa7a2c4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
     <link href="../styles.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-light">
@@ -51,15 +53,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <form method="post">
-                            <div class="form-group ">
+                        <form method="needs-validation" novalidate>
+                            <div class="form-group">
                                 <label class="control-label requiredField" for="inputFullName">
                                     Full Name
                                     <span class="asteriskField">
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="name" placeholder="Full Name" type="text" />
+                                <input class="form-control" id="full-name" placeholder="Full Name" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label requiredField" for="inputAddress">
@@ -68,15 +70,13 @@
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="name" name="name" placeholder="1234 Main St"
-                                    type="text" />
+                                <input class="form-control" id="address1" placeholder="1234 Main St" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label requiredField" for="inputAddress2">
                                     Address 2
                                 </label>
-                                <input class="form-control" id="email" name="email"
-                                    placeholder="Apartment, Studio, or floor" type="text" />
+                                <input class="form-control" id="address2" placeholder="Apartment, Studio, or floor" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label requiredField" for="inputCity">
@@ -85,8 +85,7 @@
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="subject" name="subject" placeholder="City"
-                                    type="text" />
+                                <input class="form-control" id="city-field" placeholder="City" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label requiredField" for="inputState">
@@ -150,15 +149,15 @@
                                     <option value="WY">Wyoming</option>
                                 </select>
                             </div>
-                            <div class="form-group ">
+                            <div class="form-group">
+
                                 <label class="control-label requiredField" for="inputZip">
                                     Zip
                                     <span class="asteriskField">
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="number" name="number" placeholder="Zip Code"
-                                    type="text" />
+                                <input class="form-control" id="zip-field" placeholder="Zip Code" />
                             </div>
                             <div class="form-group ">
                                 <label class="control-label requiredField" for="inputPhone">
@@ -167,19 +166,18 @@
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="number" name="number" placeholder="###-###-####"
-                                    type="text" />
+                                <input class="form-control" id="number-field" placeholder="###-###-####" />
                             </div>
-                            <div class="form-group ">
-                                <label class="control-label requiredField" for="inputEmail">
+                            <div class="form-group">
+                                <label class="control-label requiredField" for="email">
                                     Email
                                     <span class="asteriskField">
                                         *
                                     </span>
                                 </label>
-                                <input class="form-control" id="email" name="email" placeholder="Email Address"
-                                    type="text" />
+                                <input class="form-control" id="email-field" placeholder="user@email.com" />
                             </div>
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </form>
                     </div>
 
@@ -203,8 +201,9 @@
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
                     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
                     crossorigin="anonymous"></script>
-                <script
-                    src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+                <script src="../script.js"></script>
+
+
 </body>
 
 </html>
